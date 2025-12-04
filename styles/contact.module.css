@@ -1,0 +1,128 @@
+.contact_card_container {
+  padding-left: 36px !important;
+  padding-top: 48px;
+}
+.contact_heading {
+  font-family: Rokkitt;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0%;
+  color: #28256b;
+}
+.contact_card_row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.contact_card {
+  background-color: #f6f7f9;
+  border: 1px solid #e0e0e1;
+  border-radius: 16px;
+  padding: 16px;
+}
+.contact_icon {
+  border: 1px solid #e0e0e1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+}
+.contact_card_heading {
+  font-family: Rokkitt;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 4px;
+}
+.contact_card_p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #161616;
+}
+
+.carousel_home_main_container {
+  .carousel_holder {
+    position: relative;
+
+    .carousel_floating_content_holder {
+      position: absolute;
+      z-index: 5;
+      top: 214px;
+      @media screen and (max-width: 767px) {
+        top: 104px;
+      }
+      .btn_holder {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* gap: 400px; */
+        .btn_position {
+          position: absolute;
+          top: 200px;
+          @media screen and (min-width: 700px) and (max-width: 1200px) {
+            top: 280px;
+          }
+        }
+      }
+    }
+    .home_carousel_dot_class {
+      padding-bottom: 10px;
+    }
+
+    .carousel_dot_class {
+      button {
+        display: none;
+      }
+    }
+    .image_desk {
+      /* width: 100vw !important; */
+      max-height: 110vh !important;
+      /* object-fit: cover !important; */
+      /* background-size: contain !important; */
+      display: block;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .image_mob {
+      display: none;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+  .custom-carousel .slick-dots li {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-carousel .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999999;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .custom-carousel .slick-dots li.slick-active button {
+    transform: scale(1.6);
+    background-color: #6d6d6d;
+  }
+}
